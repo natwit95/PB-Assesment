@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+.menstrual-care-img {
+	
+	padding-top: 35%;
+	background-image: url("/dist/img/menstraul-hero_desktop.jpg");
+	background-size: cover;
+    position: relative;
+    
+}
+
+.category-title-1, .category-title-2, .category-par-1    {
+	position: absolute;
+	padding: 0 25px;
+	left: 0px;
+	
+}
+
+.category-title-1 {
+    top: 30px;
+}
+
+.category-title-2 {
+    top: 80px;
+    max-width: 200px;
+}
+
+.category-par-1 {
+    bottom: 115px;
+    max-width: 230px;
+}
+.trial-btn {
+    position: absolute;
+    margin-left: 25px ;
+    bottom: 80px;
+    padding: 10px 45px;
+    background-color: rgb(236, 118, 27);
+    border:none;
+}
+
+.products {
+    display: gird;
+    margin: 35px;
+    gap: 70px 30px;
+    grid-template-areas: 
+    'promo promo promo'
+    'promo1 promo2 promo2'
+    'product-1 product-2 product-3 product-4';
+    grid-template-columns: repeat(4, 1fr);
+    
+    
+}
+.promo-img {
+    
+   background-image: url("/dist/img/bamboo_desktop.jpg");
+   background-size: cover;
+   padding-top: 35%;
+   grid-area: promo-img;
+   margin-bottom: 20px;
+
+}
+
+.promo-img-1{
+    display: inline-block;
+    background-image:url("/dist/img/pad_detail_desktop.jpg") ;
+    padding: 20%;
+    background-size: cover;
+    grid-area: promo1;
+}
+
+.promo-img-2 {
+    display: inline-block;
+    background-image: url("/dist/img/pad_in_hand_desktop.jpg");
+    grid-area: promo2;
+    padding: 20%;
+    background-size: cover;
+
+}
+
+.product-1 {
+    display: inline-block;
+    /* background-image:url("/dist/img/product_images/bamboo-overnight-pads.jpg"); */
+    padding: 20px;
+    grid-area: product-1;
+    background-size: cover;
+}
+.product-2 {
+    display: inline-block;
+    background-image: url("/dist/img/product_images/bamboo-panty-liners.jpg");
+    padding: 20px;
+    grid-area: product-2;
+    background-size: cover;
+}
+
+.product-3 {
+display: inline-block;
+    background-image: url('/dist/img/product_images/bamboo-regular-maxi-pad.jpg');
+    padding: 20px;
+    grid-area: product-3;
+    background-size: cover;
+}
+
+.product-4 {
+    display: inline-block;
+    background-image: url("/dist/img/product_images/bamboo-super-maxi-pad.jpg");
+    padding: 20px;
+    grid-area: product-4;
+    background-size: cover;
+    
+}
+
+
+
