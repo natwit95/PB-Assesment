@@ -1,169 +1,130 @@
-/* * {
-    box-sizing: border-box;
-} */
-
-body, html {
-    height: 100%;
-    margin: 0;
-    
+body,
+html {
+	height: 100%;
+	margin: 0;
 }
 
 .menstrual-care-img {
-    
- 
-    width: 100%;
-    
-    text-align: left;
-    padding-top: 34%;
+	width: 100%;
+	text-align: left;
+	padding-top: 34%;
 	background-image: url("/dist/img/menstraul-hero_desktop.jpg");
 	background-size: cover;
-    position: relative;
-   /* overflow: hidden; */
-   /* font-size: x-large; */
-    
+	position: relative;
 }
 
 .heading-container {
-    display: block;
-    position: absolute;
-    padding: 3%;
-    top: 10%;
-    font-size: x-large;
-    
-
-  
+	display: block;
+	position: absolute;
+	padding: 3%;
+	top: 10%;
+	font-size: x-large;
 }
-
 
 .category-title-1 {
-    font-size: medium;
-    
+	font-size: medium;
 }
 
-
 .category-par-1 {
-    font-size: small;
-    
+	font-size: small;
 }
 
 .trial-btn {
-    /* position: absolute; */
-    /* margin: 1 35px;
-   bottom:1px; */
-    padding: 15px 45px;
-    background-color: rgb(232, 134, 99);
-    border:none;
-    color: white;
+	padding: 15px 45px;
+	background-color: rgb(232, 134, 99);
+	border: none;
+	color: white;
 }
 
 .products {
-    display: grid;
-    margin: 35px;
-    gap: 0px 30px;
-    grid-template-areas: 
-    'promo promo promo promo'
-    'promo1 promo1 promo2 promo2'
-    'product1 product2 product3 product4';
-/* grid-template-columns: repeat(4, 200px);; */
-/* grid-template-columns: 50px 50px 50px 50px; */
-    /* grid-template-columns: minmax(10px, 1fr); */
-    
+	display: grid;
+	margin: 35px;
+	gap: 0px 30px;
+	grid-template-areas:
+		"promo promo promo promo"
+		"promo1 promo1 promo2 promo2"
+		"product1 product2 product3 product4";
 }
 .promo-img {
-    
-   background-image: url("/dist/img/bamboo_desktop.jpg");
-   background-size: cover;
-   grid-area: promo;
-   margin-bottom: 20px;
-   position: relative;
-   text-align: center;
-
+	background-image: url("/dist/img/bamboo_desktop.jpg");
+	background-size: cover;
+	grid-area: promo;
+	margin-bottom: 20px;
+	position: relative;
+	text-align: center;
 }
 
 .promo-container {
-    padding-bottom: 1px;
-    text-align: center;
-    color: #fff;
-    width: 590px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    padding: 45px 0;
-    
+	padding-bottom: 1px;
+	text-align: center;
+	color: #fff;
+	width: 590px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	padding: 45px 0;
 }
 
-.promo-img-1{
-    /* display: inline-block; */
-    background-image:url("/dist/img/pad_detail_desktop.jpg") ;
-    background-size: cover;
-    grid-area: promo1;
-    
+.promo-img-1 {
+	background-image: url("/dist/img/pad_detail_desktop.jpg");
+	background-size: cover;
+	grid-area: promo1;
 }
-
 
 .promo-img-2 {
-    background-image: url("/dist/img/pad_in_hand_desktop.jpg");
-    grid-area: promo2;
-    padding: 35%;
-    background-size: cover;
-
+	background-image: url("/dist/img/pad_in_hand_desktop.jpg");
+	grid-area: promo2;
+	padding: 35%;
+	background-size: cover;
 }
 
 .product-1 {
-    margin-top: 20px;
-    grid-area: product1;
+	margin-top: 20px;
+	grid-area: product1;
 }
 .product-2 {
-    margin-top: 20px;
-    grid-area: product2;
+	margin-top: 20px;
+	grid-area: product2;
 }
 
 .product-3 {
-    margin-top: 20px;
-    grid-area: product3;
-
+	margin-top: 20px;
+	grid-area: product3;
 }
 
 .product-4 {
-    margin-top: 20px;
-    grid-area: product4;
+	margin-top: 20px;
+	grid-area: product4;
 }
 
 .product-image {
-    padding: 0;
-    display: block;
-    margin: 0 auto;
-    max-height: 100%;
-    max-width: 100%;
+	padding: 0;
+	display: block;
+	margin: 0 auto;
+	max-height: 100%;
+	max-width: 100%;
 }
 
+@media screen and (max-width: 800px) {
+	.menstrual-care-img {
+		background-image: url("/dist/img/menstrual-hero_mobile.jpg");
+		background-size: cover;
+		width: 100%;
+		height: 550px;
+	}
 
-@media screen and (max-width: 800px ) {
-   
-    .menstrual-care-img {
-        background-image: url("/dist/img/menstrual-hero_mobile.jpg");
-        background-size: cover;
-        width: 100%;
-        height: 550px;
-    }
+	.heading-container {
+		left: 25%;
+		text-align: center;
+	}
 
-    .heading-container {
-        left: 25%;
-        text-align: center;
-    }
-
-   .products {
-    grid-template-areas: 
-    'promo'
-    'promo1' 
-    'promo2'
-    'product1'
-    'product2'
-    'product3' 
-    'product4';
-    
-
-
-
+	.products {
+		grid-template-areas:
+			"promo"
+			"promo1"
+			"promo2"
+			"product1"
+			"product2"
+			"product3"
+			"product4";
+	}
 }
-}
-
